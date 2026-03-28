@@ -14,8 +14,6 @@ export default function Corp() {
 			...prev,
 			[name]: value
 		}))
-
-		console.log(form.name)
 	}
 	return (
 		<>
@@ -24,6 +22,9 @@ export default function Corp() {
 					<input name="name" value={form.name} type="text" onChange={handlech} />
 					<input name="email" value={form.email} type="email" onChange={handlech} />
 				</div>
+
+				<textarea name="msg" value={form.msg} type="text" onChange={handlech} />
+				<button>Talk?</button>
 			</div>
 			<h1>Corpo stuff, maybe just say that im cordial</h1>
 			<p><Link to="/">Bye bye</Link></p>
