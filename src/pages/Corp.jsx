@@ -23,6 +23,7 @@ export default function Corp() {
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ name: form.name, email: form.email, msg: form.msg })
 		})
+		console.log(data)
 		const res = await data.json()
 		console.log(res)
 	}
